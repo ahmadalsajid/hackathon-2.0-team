@@ -11,7 +11,7 @@ $ docker compoes up
 
 This will create all the applications and create a django superuser from your
 `.env` file credentials. A [scheduled task](./users/tasks.py) will run every
-10 minutes to collect data from TikTok and store them into the database.
+minute to collect data from TikTok and store them into the database.
 We have 2 different APIs, that we can use to extract data
 
 ```
