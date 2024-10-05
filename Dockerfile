@@ -8,6 +8,9 @@ COPY requirements.txt /app
 RUN python -m pip install --upgrade pip && \
     pip install -r requirements.txt
 
+RUN playwright install
+RUN playwright install-deps
+
 COPY . /app
 EXPOSE 8000
 #HEALTHCHECK  --start-period=30s \
