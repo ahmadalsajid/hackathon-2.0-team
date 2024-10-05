@@ -21,3 +21,6 @@ http://localhost:8000/api/users/tiktokers
 
 Also, you can use URL parameters for filtering,
 i.e. `?items_per_page=10&page=1&username=some_user`
+
+## Warning
+> No QA in our team, run at your own risk!! 
