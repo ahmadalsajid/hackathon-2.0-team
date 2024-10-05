@@ -8,4 +8,4 @@ logger = logging.getLogger(__name__)
 
 @shared_task
 def collect_data():
-    pass
+    print('task running')

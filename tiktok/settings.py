@@ -207,7 +207,7 @@ CELERY_BROKER_URL = os.getenv('RABBITMQ_URL', 'amqp://guest:guest@rabbitmq:5672/
 CELERY_ENABLE_UTC = True
 CELERY_BEAT_SCHEDULE = {  # scheduler configuration
     'collect_data': {  # the task name you want
-        'task': 'courses.tasks.collect_data',  # name of task with path
+        'task': 'users.tasks.collect_data',  # name of task with path
         'schedule': crontab(minute='*/1'),  # crontab() runs the task every minute
         # 'schedule': crontab(minute='1', hour='0'),  # crontab(minute='1', hour='0') runs the task everyday at 00:01 am
     },
